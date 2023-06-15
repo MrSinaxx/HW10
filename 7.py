@@ -2,13 +2,13 @@ import requests
 
 def get_weather_data(city):
     url = "https://api.openweathermap.org/data/2.5/weather"
-    api_key = "60be8f85c6c83c4402a1439456f9647c"  # Replace with your actual API key from OpenWeatherMap
+    api_key = "60be8f85c6c83c4402a1439456f9647c"  
 
     try:
         params = {
             "q": city,
             "appid": api_key,
-            "units": "metric"  # To get the temperature in Celsius
+            "units": "metric"  
         }
         with requests.get(url, params=params) as response:
             data = response.json()
