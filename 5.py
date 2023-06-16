@@ -16,9 +16,9 @@ class Indenter:
 
 
 with Indenter() as indent:
-    print("Hi")
+    indent.print("Hi")
     with indent:
         indent.print("Talk is Cheap!")
         with indent:
             indent.print("Show me the Code.")
-    print("Torvalds")
+    indent.print("Torvalds")
